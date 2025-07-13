@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizMaster</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>QuizMaster</h1>
+
+      <div class="question">
+        <label>1. What is 2 + 2?</label>
+        <input type="text" id="q1" placeholder="Your answer" />
+      </div>
+
+      <div class="question">
+        <label>2. Capital of France?</label>
+        <input type="text" id="q2" placeholder="Your answer" />
+      </div>
+
+      <div class="question">
+        <label>3. Is JavaScript a programming language? (yes/no)</label>
+        <input type="text" id="q3" placeholder="Your answer" />
+      </div>
+
+      <button onclick="checkScore(strictScoring)">Check Score (Strict)</button>
+      <button onclick="checkScore(lenientScoring)">
+        Check Score (Lenient)
+      </button>
+
+      <p id="scoreOutput">Your score will appear here</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
